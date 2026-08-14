@@ -1,0 +1,110 @@
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  padding-bottom: 50px;
+}
+
+/* --- HERO BANNER SECTION --- */
+.hero-bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.hero-bg img {
+  width: 90%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.hero-bg img:hover {
+  transform: scale(1.01);
+}
+
+/* --- CATEGORY CARDS SECTION --- */
+.catogore-section {
+  max-width: 1300px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Cards ke beech ka gap barha diya hai */
+  flex-wrap: wrap; /* Mobile responsive ke liye */
+}
+
+/* Individual Category Card */
+.catogore-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 15px;
+  background: #ffffff;
+  border-radius: 20px;
+  width: 140px; /* Card size pehle se bada kiya hai (Pehle ~100px tha) */
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.catogore-cart:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(99, 102, 241, 0.2);
+  border-color: #6366f1;
+}
+
+/* Category Image (Bare Size Mein) */
+.catogore-cart img {
+  width: 90px;  /* Image ka size 65px se barha kar 90px kar diya hai */
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: #f1f5f9;
+  padding: 5px;
+  border: 2px solid #e2e8f0;
+  transition: border-color 0.3s ease;
+}
+
+.catogore-cart:hover img {
+  border-color: #6366f1;
+}
+
+/* Category Text/Name */
+.catogore-cart span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e293b;
+  text-align: center;
+} 
+
+/* Trending Product Heading Styling */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  text-align: center; /* Heading ko center karega */
+  margin: 30px 0 10px 0;
+  position: relative;
+  letter-spacing: 0.5px;
+}
+
+/* Heading ke neeche ek choti stylish underline line */
+h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #6366f1; /* Button wala same theme color */
+  border-radius: 2px;
+  margin: 8px auto 0 auto;
+}

@@ -1,0 +1,202 @@
+/* Google Font Import (Agar aap index.html mein daal dein toh behtar hai) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Main Navbar Container */
+.nav-container {
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+a {
+  text-decoration: none;
+}
+/* --- TOP SECTION --- */
+.top-name {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* Premium Brand Logo */
+.top-name .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+  cursor: pointer;
+  letter-spacing: -0.5px;
+}
+
+.top-name .logo-icon {
+  color: #6366f1; /* Vibrant Indigo Accent */
+  font-size: 32px;
+}
+
+/* Modern Search Bar */
+.top-name .search-box {
+  flex: 1;
+  max-width: 600px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  background-color: #f1f5f9;
+  border-radius: 99px;
+  border: 1.5px solid transparent;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.top-name .search-box:focus-within {
+  border-color: #6366f1;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+.top-name .search-box input {
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+  color: #334155;
+}
+
+.top-name .search-box input::placeholder {
+  color: #94a3b8;
+}
+
+.top-name .search-box button {
+  height: 100%;
+  padding: 0 22px;
+  background-color: #6366f1;
+  color: #ffffff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.top-name .search-box button:hover {
+  background-color: #4f46e5;
+}
+
+/* Shopping Cart Widget */
+.cart-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.cart-box:hover {
+  background-color: #f8fafc;
+}
+
+.cart-box .icon-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-box svg {
+  color: #1e293b;
+  font-size: 32px;
+  stroke-width: 0.5;
+}
+
+.cart-box .cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background-color: #ef4444; /* Alert Red */
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 700;
+  height: 18px;
+  min-width: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  border: 2px solid #ffffff;
+}
+
+.cart-box .cart-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+/* --- BOTTOM SECTION (Categories Nav) --- */
+.bottom-name {
+  background-color: #0f172a; /* Deep Charcoal/Navy Header */
+  padding: 0 24px;
+}
+
+.bottom-name ul {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  list-style: none;
+}
+
+.bottom-name li {
+  color: #cbd5e1;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 14px 0;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.bottom-name li:hover,
+.bottom-name li.active {
+  color: #ffffff;
+}
+
+/* Underline Animation on Hover */
+.bottom-name li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #6366f1;
+  border-radius: 3px 3px 0 0;
+  transition: width 0.3s ease;
+}
+
+.bottom-name li:hover::after,
+.bottom-name li.active::after {
+  width: 100%;
+}

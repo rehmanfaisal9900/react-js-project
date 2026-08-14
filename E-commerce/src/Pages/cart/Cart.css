@@ -1,0 +1,112 @@
+/* Main Cart Container */
+.cart {
+  width: 100%;
+  min-height: 80vh;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+/* Empty Cart Section */
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.empty-cart img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  opacity: 0.85;
+}
+
+.empty-cart h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+/* Cart Items Section - AAPKE EXACT CLASSNAME KO DEKHTE HUE */
+.cartcard-section {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Force CartCard elements to take 100% width of the section */
+.cartcard-section > * {
+  width: 100%;
+}
+
+/* Subtle Smooth Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* --- PRICE SUMMARY SECTION --- */
+.price-section {
+  width: 100%;
+  margin-top: 15px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.price-section span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Total price ko highlight karne ke liye */
+.price-section span:last-child {
+  font-size: 18px;
+  font-weight: 700;
+  color: #16a34a; /* Green color total ke liye */
+}
+
+/* Mobile responsive alignment */
+@media (max-width: 500px) {
+  .price-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+  .cart {
+    padding: 20px 10px;
+  }
+  
+  .empty-cart img {
+    width: 150px;
+  }
+
+  .empty-cart h1 {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,53 @@
+.shop {
+    width: 100%;
+   min-height:100vh;
+}
+
+/* Main Heading Container */
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+
+.heading {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  width: 100%;             
+  margin: 20px 0;         
+  cursor: pointer;
+  user-select: none;
+  padding-top: 20px;
+}
+
+/* Shop Text Styling (Bada Font Size) */
+.heading span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;              
+  font-size: 36px;         
+  font-weight: 800;
+  color: #0f172a;          
+  letter-spacing: -0.5px;
+  transition: color 0.3s ease;
+}
+
+/* Icon (FaShopify) Styling */
+.heading span svg {
+  font-size: 40px;       
+  color: #6366f1;          
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Hover Animation */
+.heading:hover span {
+  color: #6366f1;
+}
+
+.heading:hover span svg {
+  transform: rotate(-10deg) scale(1.15); 
+}
