@@ -1,0 +1,141 @@
+/* --- CONTACT MAIN CONTAINER --- */
+.contact {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: #f8fafc;
+}
+
+/* --- CONTACT HEADER STYLING --- */
+.contact-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contact-header h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+.contact-header p {
+  font-size: 15px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* --- FORM STYLING --- */
+.contact form {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 35px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #e2e8f0;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* --- INPUT & TEXTAREA STYLING --- */
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 15px;
+  color: #1e293b;
+  background-color: #f8fafc;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+/* Textarea specific height */
+.contact form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+/* Input Focus State (Glow effect) */
+.contact form input:focus,
+.contact form textarea:focus {
+  border-color: #6366f1; 
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+/* Placeholder Styling */
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* --- BUTTON STYLING --- */
+.contact form button {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #6366f1; 
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.25);
+}
+
+/* Button Hover & Active States */
+.contact form button:hover {
+  background-color: #4f46e5; 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
+}
+
+.contact form button:active {
+  transform: translateY(0);
+}
+
+/* Smooth Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --- MOBILE RESPONSIVE --- */
+@media (max-width: 480px) {
+  .contact {
+    padding: 20px 12px;
+  }
+
+  .contact form {
+    padding: 25px 20px;
+  }
+
+  .contact-header h1 {
+    font-size: 26px;
+  }
+  
+  .contact-header p {
+    font-size: 14px;
+  }
+}

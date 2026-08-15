@@ -34,7 +34,7 @@
   margin: 0;
 }
 
-/* Cart Items Section - AAPKE EXACT CLASSNAME KO DEKHTE HUE */
+/* Cart Items Section */
 .cartcard-section {
   width: 100%;
   max-width: 900px;
@@ -43,7 +43,7 @@
   gap: 16px;
 }
 
-/* Force CartCard elements to take 100% width of the section */
+
 .cartcard-section > * {
   width: 100%;
 }
@@ -80,11 +80,11 @@
   color: #1e293b;
 }
 
-/* Total price ko highlight karne ke liye */
+
 .price-section span:last-child {
   font-size: 18px;
   font-weight: 700;
-  color: #16a34a; /* Green color total ke liye */
+  color: #16a34a; 
 }
 
 /* Mobile responsive alignment */

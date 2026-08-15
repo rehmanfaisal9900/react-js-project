@@ -1,4 +1,4 @@
-/* Google Font Import (Agar aap index.html mein daal dein toh behtar hai) */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 * {
@@ -44,7 +44,7 @@ a {
 }
 
 .top-name .logo-icon {
-  color: #6366f1; /* Vibrant Indigo Accent */
+  color: #6366f1; 
   font-size: 32px;
 }
 
@@ -132,7 +132,7 @@ a {
   position: absolute;
   top: -6px;
   right: -8px;
-  background-color: #ef4444; /* Alert Red */
+  background-color: #ef4444;
   color: #ffffff;
   font-size: 11px;
   font-weight: 700;
@@ -154,7 +154,7 @@ a {
 
 /* --- BOTTOM SECTION (Categories Nav) --- */
 .bottom-name {
-  background-color: #0f172a; /* Deep Charcoal/Navy Header */
+  background-color: #0f172a; 
   padding: 0 24px;
 }
 

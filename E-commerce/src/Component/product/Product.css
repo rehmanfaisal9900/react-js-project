@@ -1,17 +1,15 @@
-/* --- PARENT CONTAINER (LEFT & RIGHT BALANCE GRID) --- */
+/* --- PARENT CONTAINER */
 .product-section {
   display: grid;
-  /* Auto-fit se cards dynamically adjust honge aur left/right space equal rahegi */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px; /* Cards ke beech ki spacing */
+  gap: 25px; 
   width: 100%;
-  padding: 20px 30px; /* Left aur right side par 30px bilkul equal margin */
+  padding: 20px 30px;
   box-sizing: border-box;
 }
 
-/* --- PRODUCT CARD (BADA & MODERN STYLE) --- */
+/* --- PRODUCT CARD  */
 .product {
-  /* Width ko 100% rakhein taake Grid ke column mein fit ho sake */
   width: 100%; 
   background-color: #ffffff;
   border-radius: 18px;
@@ -36,8 +34,8 @@
 .product img {
   width: 100%;
   height: 200px;
-  object-fit: contain; /* Image crop nahi hogi, poori dikhegi */
-  padding: 10px; /* Center alignment & clean border feel */
+  object-fit: contain; 
+  padding: 10px; 
   border-radius: 14px;
   background-color: #f8fafc;
   box-sizing: border-box;
@@ -45,7 +43,7 @@
 }
 
 .product:hover img {
-  transform: scale(1.04); /* Soft zoom effect */
+  transform: scale(1.04); 
 }
 
 /* Details Layout */

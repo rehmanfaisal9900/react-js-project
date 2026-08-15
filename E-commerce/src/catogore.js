@@ -8,12 +8,12 @@ import all from "./assets/emptycart.png";
 export const catogoare = [
   {
     id: 1,
-    name: "All", // All ko top par rakhna standard practice hai
+    name: "All", 
     Image: all
   },
   {
     id: 2,
-    name: "Electronics", // "Electronic Item" ko "Electronics" kar diya
+    name: "Electronics",
     Image: elctronic
   },
   {
@@ -28,12 +28,12 @@ export const catogoare = [
   },
   {
     id: 5,
-    name: "Sports", // "Sport" ko "Sports" kar diya
+    name: "Sports", 
     Image: sport
   },
   {
     id: 6,
-    name: "Home & Kitchen", // "Home & Item" ko "Home & Kitchen" kar diya
+    name: "Home & Kitchen", 
     Image: home
   }
 ];
